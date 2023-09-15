@@ -11,8 +11,9 @@ jobs:
   # This is mirrored in the release workflow.
   build_and_test:
     name: 'Build and Test'
-    uses: StackStorm-Exchange/ci/.github/workflows/pack-build_and_test.yaml@master
+    uses: StackStorm-Exchange/ci/.github/workflows/pack-build_and_test.yaml@feature/py-3.8
     with:
       enable-common-libs: false
+      python-version: 3.8
       #apt-cache-version: v0
       #py-cache-version: v0
